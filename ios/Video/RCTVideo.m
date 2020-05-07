@@ -74,9 +74,9 @@ static int const RCTVideoUnset = -1;
   NSString *_filterName;
   BOOL _filterEnabled;
   UIViewController * _presentingViewController;
+  BOOL _isInFullScreen;
 #if __has_include(<react-native-video/RCTVideoCache.h>)
   RCTVideoCache * _videoCache;
-  BOOL _isInFullScreen;
 #endif
 #if TARGET_OS_IOS
   void (^__strong _Nonnull _restoreUserInterfaceForPIPStopCompletionHandler)(BOOL);
